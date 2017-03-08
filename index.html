@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>
+Pavement
+</title>
+<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+<script src="js/myscripts.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="All">
+
+<!-- блок для Главного меню name="productions" name="rewiews" name="contacts"-->
+<div id="BlockMenu">
+    <div id="alignmentMenu">
+        <div id="mainMenu">
+            <UL id="nav">       <!--class="Item_bg"          onclick="Videlenie(this)"-->
+                <LI><a href="#"  ><span onclick="Videlenie(this)">главная</span></a></li>
+                <LI><a href="#ToReason"  ><span onclick="Videlenie(this)">преимущества</span></a></li>
+                <LI><a href="#ToProduction"  ><span onclick="Videlenie(this)">продукция</span></a></li>
+                <LI><a href="#ToReviews"><span  onclick="Videlenie(this)">отзывы</span></a></li>
+                <LI><a href="#Contacts" ><span onclick="Videlenie(this)">контакты</span></a></li>
+            </UL>
+        </div>
+
+    </div>
+
+</div>
+<!-- ***************Конец Главного меню*************** -->
+
+<div id="center-block">  <!-- блок для центрования всего контекта  -->
+<h1>New string</h1>
+<!-- блок для окна CallBack -->
+<div id="CallBlock">
+	<div id="GreenTuning"></div>
+	<div id="CallBlock_Content">
+		<center><div id="YellowBlock"> звоните сейчас!</div></center>
+		<div id="Num_Tel">
+			<img src="img/Phone.png" width="30" height="40" id="Phone"/>
+			<p id="Numder_tel"> (098) 177-1-177 <br/> (099) 421-444-1</p>
+		</div>
+		<!--<a href="#" class="button28" onClick="show_block()"><div id="TextinButton">CALL BACK</div></a>-->
+
+		<button class="Knopka2" onClick="show_block()"><div id="TextinButton">CALL BACK</div></button>
+	</div>
+
+</div>
+
+<!-- ***************Конец блока для окна CallBack*************** -->
+
+
+<!-- начало Скрытого блока -->
+<div id="shadow_block" class="shadow" onClick="noshow_block()"> </div><!-- Блок, который не видим, а при активизации тонирует экран и высвечивает форму для заполнения-->
+<center>
+<div id="forma_block" class="shadow">
+         <p class="textinForm">заполните форму и <span style="color: #F3FF00;">мы вам перезвоним</span></p>
+ <!--
+              <form action="" method="post" name="form2" id="form_id1" width="300px">
+                    <input type="text" name="name1" value="Имя" class="text_pole" onfocus="if (this.value == 'Имя') this.value = '';" onblur="if (this.value == '') this.value = 'Имя';" maxlength="255" />
+                     <br />
+                    <input type="text" name="telephone1" value="Телефон" class="text_pole" onfocus="if (this.value == 'Телефон') this.value = '';" onblur="if (this.value == '') this.value = 'Телефон';" maxlength="255" />
+                    <div class="pustoy_block" id="OutText1"></div>
+                    <input type="submit" value=" Отправить " id="KnopkaInShadowBlock" class="Knopka" onclick="AjaxFormRequest1('OutText1', 'form_id1')"/>
+                </form>
+   -->
+
+
+                <form action="" method="post" name="form2" width="300px" id="form_id1">
+                    <input type="text" name="name" value="Имя" class="text_pole" onfocus="if (this.value == 'Имя') this.value = '';" onblur="if (this.value == '') this.value = 'Имя';" maxlength="255" />
+                    <br />
+                    <input type="text" name="telephone" value="Телефон" class="text_pole" onfocus="if (this.value == 'Телефон') this.value = '';" onblur="if (this.value == '') this.value = 'Телефон';" maxlength="255" />
+                    <div class="pustoy_block" id="OutText1"></div>
+                    <input type="button" name="sendMessage" value=" Отправить "class="Knopka" onclick="AjaxFormRequest1('OutText1', 'form_id1')"/>
+
+                </form>
+
+</div>
+</center>
+<!--*************** Конец Скрытого блока ***************-->
+
+<!-- блок для Галлереи -->
+<div id="BlockGallery">
+	<div id="imgForGal"><img src="img/1.jpg" width="100%" height="600" id="main_screen"/>
+		<div id="min_nav">
+			<canvas class="miniCircle" width="16" height="18"> </canvas>
+			<canvas class="miniCircle" width="16" height="18"> </canvas>
+			<canvas class="miniCircle" width="16" height="18"> </canvas>
+			<canvas class="miniCircle" width="16" height="18"> </canvas>
+		</div>
+
+	<div id="tuning_poloca"></div>
+		<div id="knopki">
+			<div id="previous" class="rotate" onclick="prev()"><img src="img/previous_active.png" width="64" height="64" /></div>
+			<center><div id="Nadpis"><p id="textInGallety">СОВРЕМЕННАЯ <span id="biruza_text">ТРОТУАРНАЯ ПЛИТКА</span> <br /> ПО НИЗКИМ ЦЕНАМ</p></div></<center>
+			<div id="next" class="rotate" onclick="next()"><img src="img/next_active.png" width="64" height="64" /></div>
+		</div>
+	</div>
+	<div id="ToReason"></div>
+</div>
+<!-- *************** блок для индикатора ***************-->
+
+
+<!--*************** Конец блока для Галлереи ***************-->
+
+
+<!-- блок для Name for Razdel1 -->
+<div id="NameRazdel">
+    <div>
+        <p id="GreenRamka" > НАШИ ПРЕИМУЩЕСТВА </p>
+    </div>
+    <center class="smallTextInPunktMenu"> 6 причин <span style="color: #00C0A7;">заказать тротуарную плитку</span> именно у нас: </center>
+
+</div>
+<!--*************** Конец блока Name for Razdel1 ***************-->
+
+<!-- блок для Преимущества -->
+<div id="GreyBlock">
+    <div id="CenterGreyBlock">
+       <center>
+        <div class="reason">
+            <img src="img/Rectangle1.png" width="105" height="100" />
+            <center class="NameReason">7 лет на рынке</center>
+            Изготовлено более 300 000 кв. м. тротуарной плитки. Работаем с крупными городами: Днепропетровск, Кривой Рог, Запорожье, Бердянск, Геническ, Павлоград, Энергодар.
+        </div>
+        <div class="reason">
+            <img src="img/quality.png" width="95" height="100" />
+            <center class="NameReason">КАЧЕСТВЕННЫЙ ПРОДУКТ</center>
+            Благодаря применению высококачественных материалов и современных технологий, наша плитка обладает высокой прочностью и не теряет своего эстетического вида годами.
+        </div>
+        <div class="reason">
+            <img src="img/knob.png" width="105" height="100" />
+            <center class="NameReason">САМЫЕ НИЗКИЕ ЦЕНЫ </center>
+            <p class="MyFont">Мы постоянно мониторим ценовую политику тротуарной плитки в нашей стране и предлагаем Вам самую низкую цену
+на данный товар
+        </div>
+        <div class="reason">
+            <img src="img/hand.png" width="115" height="100" />
+            <center class="NameReason">БОЛЬШОЙ ВЫБОР ПРОДУКЦИИ </center>
+            Разнообразие форм плитки, предлагаемое нашей фирмой, позволяет воплотить в реальность любые креативные
+дизайнерские решения
+        </div>
+        <div class="reason">
+            <img src="img/Rounded-Rectangle.png" width="150" height="100" />
+            <center class="NameReason">БОЛЕЕ 10 ЦВЕТОВ</center>
+            Ассортимент форм плитки и широкая цветовая гамма открывают широкие возможности для индивидуального оформления площадки перед домом или офисом
+        </div>
+        <div class="reason">
+            <img src="img/car.png" width="130" height="100" />
+            <center class="NameReason">ПОМОЩЬ В ДОСТАВКЕ</center>
+            Благодаря применению высококачественных материалов и современных технологий, наша плитка обладает высокой прочностью и не теряет своего эстетического вида годами.
+        </div>
+        </center>
+    </div>
+    <div id="ToProduction"></div>
+</div>
+<!--*************** Конец Преимущества ***************-->
+
+<div id="otstup"></div>
+
+<!-- блок для заголовока Наша продукция -->
+<div id="NameRazdel2">
+    <div>
+        <p id="GreenRamka2"> НАША ПРОДУКЦИЯ </p>
+    </div>
+    <center class="smallTextInPunktMenu"> яркие решения для Вашего участка </center>
+
+</div>
+<!--*************** Конец блока для заголовока Наша продукция ***************-->
+
+<!-- блок для Наша Продукция -->
+<div id="Productions">
+    <div class="product">
+    <img src="img/plitka_1.png" width="340" height="230" style="margin: 10px;"/>
+        <div class="GreenBlock">
+            <center class="textInGreenBlock">КИРПИЧИК</center>
+        </div>
+        <div class="GreyTreugs">
+            <div class="right_treug"><canvas class="treug1" width="25" height="25"> </canvas></div>
+            <div class="left_treug"><canvas class="treug2" width="25" height="25"> </canvas></div>
+        </div>
+        <div class="razmer">
+            200x100x60 мм
+        </div>
+    </div>
+
+    <div class="product">
+    <img src="img/plitka_2.jpg" width="340" height="230" style="margin: 10px;"/>
+        <div class="GreenBlock">
+            <center class="textInGreenBlock2">СТАРЫЙ ГОРОД <p class="textSmallInGreenBlock">ГЛАДКИЙ</p></center>
+        </div>
+		<div class="GreyTreugs">
+            <div class="right_treug"><canvas class="treug1" width="25" height="25"> </canvas></div>
+            <div class="left_treug"><canvas class="treug2" width="25" height="25"> </canvas></div>
+        </div>
+        <div class="razmer2">
+            180x120x60 мм<br />
+            120x120x60 мм<br />
+            90x120x60 мм<br />
+            50x120x60 мм<br />
+        </div>
+    </div>
+
+    <div class="product">
+    <img src="img/plitka_3.jpg" width="340" height="230" style="margin: 10px;"/>
+        <div class="GreenBlock">
+            <center class="textInGreenBlock2">СТАРЫЙ ГОРОД <p class="textSmallInGreenBlock">КРОШКА</p></center>
+        </div>
+		 <div class="GreyTreugs">
+            <div class="right_treug"><canvas class="treug1" width="25" height="25"> </canvas></div>
+            <div class="left_treug"><canvas class="treug2" width="25" height="25"> </canvas></div>
+        </div>
+        <div class="razmer2">
+            180x120x60 мм<br />
+            120x120x60 мм<br />
+            90x120x60 мм<br />
+            50x120x60 мм<br />
+        </div>
+    </div>
+
+    <div class="product2">
+    <img src="img/plitka_4.png" width="340" height="230" style="margin: 10px;"/>
+        <div class="GreenBlock">
+            <center class="textInGreenBlock2">РОМБ <p class="textSmallInGreenBlock">ГЛАДКИЙ</p></center>
+        </div>
+		 <div class="GreyTreugs">
+            <div class="right_treug"><canvas class="treug1" width="25" height="25"> </canvas></div>
+            <div class="left_treug"><canvas class="treug2" width="25" height="25"> </canvas></div>
+        </div>
+        <div class="razmer3">
+            240x140x40 мм
+        </div>
+    </div>
+
+    <div class="product2">
+    <img src="img/plitka_5.png" width="340" height="230" style="margin: 10px;"/>
+        <div class="GreenBlock">
+            <center class="textInGreenBlock2">РОМБ  <p class="textSmallInGreenBlock">КРОШКА</p></center>
+        </div>
+		 <div class="GreyTreugs">
+            <div class="right_treug"><canvas class="treug1" width="25" height="25"> </canvas></div>
+            <div class="left_treug"><canvas class="treug2" width="25" height="25"> </canvas></div>
+        </div>
+        <div class="razmer3">
+            240x140x40 мм
+        </div>
+    </div>
+
+    <div class="product2">
+    <img src="img/plitka_6.png" width="340" height="230" style="margin: 10px;"/>
+        <div class="GreenBlock">
+            <center class="textInGreenBlock">ПОРЕБИК</center>
+        </div>
+		 <div class="GreyTreugs">
+            <div class="right_treug"><canvas class="treug1" width="25" height="25"> </canvas></div>
+            <div class="left_treug"><canvas class="treug2" width="25" height="25"> </canvas></div>
+        </div>
+        <div class="razmer3">
+            650x220x80 мм
+        </div>
+    </div>
+</div>
+<!--*************** Конец блока для Наша Продукция ***************-->
+
+<!-- блок для Акция -->
+<div id="Action">
+    <div id="YellowLine">    </div>
+    <div id="CenterActionBlock">
+        <center><div id="YellowRect">АКЦИЯ</div></center>
+        <center><div id="TextInBlockAction">НАШЛИ ЦЕНЫ ДЕШЕВЛЕ НАШИХ? <br />ПОКАЖИ СЧЁТ И <span id="YellowText">ПОЛУЧИ ДОПОЛНИТЕЛЬНУЮ СКИДКУ</span></div></center>
+
+        <div class="procetn">
+			<div class="img_proc"><img src="img/circle1.png"/></div>
+            <center><div class="cifr"><span id="Tofive">5</span>%</div></center>
+        </div>
+
+		<div class="procetn">
+			<div class="img_proc"><img src="img/circle2.png"/></div>
+            <center><div class="cifr">7%</div></center>
+        </div>
+
+		<div class="procetn">
+			<div class="img_proc"><img src="img/circle3.png"/></div>
+            <center><div class="cifr">10%</div></center>
+        </div>
+
+	</div>
+
+</div>
+<!--*************** Конец блока для Акция ***************-->
+<div id="otstup2">
+<div id="ToReviews" ></div>
+</div>
+
+<!-- блок для Название раздела О нас говорят -->
+<div id="NameRazdel3">
+	<p id="GreenRamka3"> О НАС ГОВОРЯТ </p>
+</div>
+<!--*************** Конец блока для Название раздела О нас говорят ***************-->
+
+<!-- блок для раздела О нас говорят -->
+<div id="Reviews">
+	<div id="people1">
+		<div class="blockForImg"><img class="img_people" src="img/piple_1.png"/>
+		<div class="Review_Text">
+			<p class="text1">Владислав, прораб:</p><br>
+			<p class="text2">Сотрудничаю с компанией "Алеандр" более пяти лет! Оперативность - то, что нравится в этих ребятах. Доверяю на все 100%</p>
+		</div>
+		</div>
+	</div>
+	<br>
+	<div id="people1">
+		<div class="blockForImg"><img class="img_people" src="img/piple_2.png"/>
+		<div class="Review_Text">
+			<p class="text1">Александра, менеджер по продажам строительных материалов:</p><br>
+			<p class="text2">Продукт, за который не стыдно поручиться! Отвечает всем требованиям любого заказчика! Работают на совесть. Всегда есть в наличии, что весьма удобно для продажи.</p>
+		</div>
+		</div>
+	</div>
+	<br><br>
+	<div id="people1">
+		<div class="blockForImg"><img class="img_people" src="img/piple_3.png"/>
+		<div class="Review_Text">
+			<p class="text1">Борис, укладчик плитки:</p><br>
+			<p class="text2">Работаю с «Алеандром» уже второй год. Не работа, а удовольствие. Плитка всегда в срок по самой низкой цене, заказчик всегда доволен.</p>
+		</div>
+		</div>
+
+	</div>
+</div>
+<!--*************** Конец раздела О нас говорят ***************-->
+
+<!-- блок для Формы обратной связи -->
+<div id="Contacts">
+
+    <div id="CenterContactBlock">
+        <center><div id="Svyaz">СВЯЖИТЕСЬ С НАМИ</div></center>
+        <div id="CenterInContactBlock">
+			<div id="Forma">
+                <p class="textinForm">ПОЧТА</p>
+                <form action="" method="post" name="form1" width="300px" id="form_id">
+                    <input type="text" name="name" value="Имя" class="text_pole" onfocus="if (this.value == 'Имя') this.value = '';" onblur="if (this.value == '') this.value = 'Имя';" maxlength="255" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="lastname" value="Фамилия" class="text_pole" onfocus="if (this.value == 'Фамилия') this.value = '';" onblur="if (this.value == '') this.value = 'Фамилия';" maxlength="255" />
+                    <textarea name="message" class="text_message">Сообщение</textarea><br />
+                    <div class="pustoy_block" id="OutText"><div id="textShadowinForm1" class="shadow">Ваши контактные данные успешно отправлены.</div></div>
+                    <input type="button" name="sendMessage" value=" Отправить " id="KnopkaInMainForm" class="Knopka" onclick="AjaxFormRequest('OutText', 'form_id')"/>
+
+                </form>
+			</div>
+			<div id="Tel">
+				<p class="textinForm">КОНТАКТЫ:</p>
+				<p class="textinForm2"> (098) 177-1-177 </p>
+				<p class="textinForm2">	(099) 421-444-1 </p>
+				<p class="textinForm2">	aleandr@email.ua </p>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+<!--*************** Конец блока для Формы обратной связи ***************-->
+<div id="otstup3"></div>
+<!-- блок для Footer -->
+<div id="Footer">
+	<center><div id="FooterText">@ АЛЕАНДР. Все права защищены</div></center>
+</div>
+<!--*************** Конец Footer ***************-->
+
+</div>
+<div id="toTop"> <img src="img/In_Top.png" width="50" height="50" /> </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,739 @@
+﻿* {margin: 0; padding: 0;} /* обнуляем отступы */
+
+html,body {
+height: 100%; /* задаем высоту тела документа */
+}
+
+#All{
+    width:100%;
+    height: 100%;
+   position: absolute;
+}
+#center-block{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+@font-face {
+font-family: HelveticaNeueCyr-Roman; /* Гарнитура шрифта */
+    src: url(Fonts/Helvetica/HelveticaNeueCyr-Roman.otf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+     font-family: BebasNeueRegular; /* Гарнитура шрифта */
+    src: url(Fonts/Bebas_Neue/BebasNeueRegular.otf); /* Путь к файлу со шрифтом */
+}
+/*----------Начало стиля для блока Главного меню-----------------*/
+#BlockMenu{
+     width:100%;
+    height: 80px;
+    background-color: #29b29a;
+    position: fixed;
+    z-index: 3;
+}
+#alignmentMenu{
+    width: 1200px;
+    margin:10px auto;
+}
+
+#mainMenu{
+width: 700px;
+padding: 0;
+float:left;
+}
+
+/*Начало стиля для менюшки*/
+#mainMenu ul{
+list-style:none;
+text-align:center;
+margin: 0 3px;
+}
+
+#mainMenu li{
+list-style:none;
+display:block;
+float:left;
+padding:0px;
+font-family: BebasNeueRegular;
+font-size:24pt;
+margin: 0 0 15px 0;
+}
+
+#mainMenu li a{
+display:block;
+float:left;
+text-decoration:none;
+padding:0 10px;
+margin: 0 0 15px 0;
+height: 40px;
+color:white;
+}
+
+#mainMenu li a span{
+position:relative;
+top:10px;
+border-bottom:2px solid #29b29a;
+}
+
+#mainMenu li a span:hover{
+border-bottom:2px solid white;
+}
+
+ /*----------Конец стиля для блока Главного меню-----------------*/
+
+/*----------Начало стиля для Скрытого блока -----------------*/
+.shadow{
+display:none;
+}
+
+.shadow2{
+display:none;
+}
+
+#shadow_block{
+margin:0;
+width:100%;
+height:100%;
+background-color:black;
+position:fixed;
+z-index:8;
+opacity:0.6; /*устанавливает прозрачность*/
+cursor:pointer;
+left:0px;
+}
+
+#forma_block{
+width:400px;
+height: 245px;
+top:100px;
+left:35px;
+background-color:#00B39A;
+position:fixed;
+z-index:9;
+padding: 10px;
+}
+
+
+#textShadowinForm{
+    background-color:#00C0A5;
+    color:white;
+   font-family: BebasNeueRegular;
+    font-size:10pt;
+}
+
+.textinForm{
+    color:white;
+    font-family: BebasNeueRegular;
+    font-size:25pt;
+}
+
+.pustoy_block{
+    width: 400px;
+    height: 20px;
+    /*background-color:#00C0A5;*/
+    color:white;
+    font-size: 10pt;
+    font-family: Arial;
+}
+/*----------Конец стиля для Скрытого блока -----------------*/
+
+ /*----------Начало стиля для блока Call Back-----------------*/
+#CallBlock{
+    width:300px;
+    height: 255px;
+    position: fixed;
+    top:-300px;
+    border-radius: 0 0 10px 10px;
+    z-index: 3;
+}
+
+#GreenTuning{
+	width:100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #00D0B6;
+	border-radius: 0 0 10px 10px;
+	position:absolute;
+	z-index:4;
+}
+
+#CallBlock_Content{
+	position:absolute;
+	z-index:7;
+}
+
+#YellowBlock{
+	background-color: yellow;
+	margin: 15px 0 0 0;
+	padding:10px 0;
+	width:300px;
+    height: 55px;
+	font-family: BebasNeueRegular;
+font-size:36pt;
+color:#00705B;
+font-weight: bold;
+}
+
+#Phone{
+	float: left;
+	margin: 20px 15px;
+}
+
+#Numder_tel{
+	margin:10px 0 0 10px;
+	color:white;
+    font-size: 28pt;
+    font-family: BebasNeueRegular;
+}
+
+
+.Knopka2{
+    width: 220px;
+    height: 45px;
+    box-shadow: 0px 4px 0 #FF9400;
+    margin-top: 10px;
+	margin-left:40px;
+    background-color: #F3FF00;
+	border:none;
+
+}
+#TextinButton{
+    margin-top: -10px;
+    color: #007755;
+    font-size:40pt;
+    font-family: BebasNeueRegular;
+    font-weight: bold;
+}
+
+.Knopka2:hover{
+    box-shadow: none;
+    margin-top: 15px;
+	cursor:pointer;
+}
+/*----------Конец стиля для блока Call Back-----------------*/
+
+
+/*----------Начало стиля для блока с Галлереей -----------------*/
+
+#imgForGal{
+    height:600px;
+}
+
+#tuning_poloca{
+	width:100%;
+	height:150px;
+	background-color:black;
+	opacity:0.5;
+	margin:-340px 0 170px 0;
+}
+
+#knopki{
+	width:1200px;
+	margin-top:-317px;
+	position:absolute;
+	z-index:2;
+}
+
+#previous{
+	float:left;
+	margin: 40px 0 0 30px ;
+	cursor:pointer;
+	opacity:0.5;
+}
+
+#next{
+	float:right;
+	margin: 40px 30px 0 0  ;
+	cursor:pointer;
+	opacity:0.5;
+}
+
+#previous:hover{
+	opacity:1;
+}
+
+#next:hover{
+	opacity:1;
+}
+
+#Nadpis{
+	float:left;
+	width:900px;
+	margin:-5px 0 0 70px;
+
+}
+
+#textInGallety{
+	font-size: 48pt;
+    font-family: BebasNeueRegular;
+	color:white;
+}
+
+#biruza_text{
+	color:#00F1D1;
+}
+
+#min_nav{
+    margin:-30px auto 20px auto;
+    width: 105px;
+    height: 10px;
+}
+
+
+/*----------Конец стиля для блока с Галлереей -----------------*/
+
+
+/*----------Начало стиля для Названий разделов -----------------*/
+#NameRazdel{
+    margin: 0px auto 30px auto;
+    width: 564px;
+}
+
+#GreenRamka{
+    color:#00C0A7;
+    font-size: 57pt;
+    font-family: BebasNeueRegular;
+    padding: 5px 10px;
+    width: 540px;
+    margin-bottom: 20px;
+    border: 3px solid #00C0A7;
+}
+
+.smallTextInPunktMenu{
+    font-size: 22pt;
+    font-family: BebasNeueRegular;
+    color: #928D8D;
+}
+ /*----------Конец стиля для Названий разделов -----------------*/
+
+/*----------Начало стиля для Серого сплошного блока-----------------*/
+#ToReason{
+    width: 100%;
+    height: 80px;
+    margin-top:-50px;
+}
+
+#GreyBlock{
+    width: 100%;
+    height: 630px;
+    background-color: #EFEFEF;
+    position: absolute;
+    left: 0px;
+}
+
+#CenterGreyBlock{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.reason{
+    width: 350px;
+    height: 260px;
+    float:left;
+    margin: 35px 23px 0 23px;
+    font-size: 12pt;
+    font-family: HelveticaNeueCyr-Roman;
+    color: #837F7F;
+}
+
+.NameReason{
+    margin: 15px auto;
+    font-size: 22pt;
+    font-family: BebasNeueRegular;
+    color: #8C8888;
+}
+
+ /*----------Конец стиля для Серого сплошного блока-----------------*/
+#otstup{
+    width: 1200px;
+    height: 630px;
+}
+
+/*----------Начало стиля для Наша Продукция-----------------*/
+#ToProduction{
+margin-top:590px;
+width: 1200px;
+height: 80px;
+}
+
+#NameRazdel2{
+    margin: 40px auto 35px auto;
+    width: 465px;
+}
+
+#GreenRamka2{
+    color:#00C0A7;
+    font-size: 57pt;
+    font-family: BebasNeueRegular;
+    margin: 0 auto 20px auto;
+    padding: 5px 10px;
+    width: 440px;
+    border: 3px solid #00C0A7;
+}
+
+.product{
+    background-color: #DFDFDF;
+    width: 360px;
+    height: 540px;
+    float:left;
+    margin: 10px 20px;
+}
+
+.product2{
+    background-color: #DFDFDF;
+    width: 360px;
+    height: 455px;
+    float:left;
+    margin: 10px 20px;
+}
+
+.GreenBlock{
+    background-color: #00D1B6;
+    width: 386px;
+    height: 90px;
+    margin: 25px 0 25px -13px;
+    padding: 0;
+}
+
+/*----------Рисуем треугольники-----------------*/
+.GreyTreugs{
+    margin-top: -35px;
+}
+.right_treug{
+    width: 30px;
+    margin-right: -20px;
+    float: right;
+}
+.left_treug{
+    width: 30px;
+    margin-left: -20px;
+    float: left;
+}
+/*----------конец рисования треугольников-----------------*/
+
+.textInGreenBlock{
+    font-size: 43pt;
+    font-family: BebasNeueRegular;
+    color: white;
+    padding-top: 10px;
+}
+
+.textInGreenBlock2{
+    font-size: 43pt;
+    font-family: BebasNeueRegular;
+    color: white;
+    padding-top: -10px;
+}
+
+.textSmallInGreenBlock{
+    padding: 0;
+    margin-top: -5px;
+    font-size: 13pt;
+    font-family: HelveticaNeueCyr-Roman;
+    color:white;
+}
+
+.razmer{
+    margin-top: 100px;
+    font-size: 20pt;
+    font-family: HelveticaNeueCyr-Roman;
+    color:#686262;
+    text-align: center;
+}
+
+.razmer2{
+    margin-top: 60px;
+    font-size: 20pt;
+    font-family: HelveticaNeueCyr-Roman;
+    color:#686262;
+    text-align: center;
+}
+
+.razmer3{
+    margin-top: 60px;
+    font-size: 20pt;
+    font-family: HelveticaNeueCyr-Roman;
+    color:#686262;
+    text-align: center;
+}
+/*----------Конец стиля для Наша продукция-----------------*/
+
+/*----------Начало стиля для блока с Акцией-----------------*/
+#Action{
+    height: 460px;
+    width: 100%;
+    background-color: #00B39A;
+    position: absolute;
+    left: 0px;
+    margin-top:1080px;
+    font-size: 43pt;
+    font-family: BebasNeueRegular;
+}
+
+#CenterActionBlock{
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+#YellowLine{
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #FFF200;
+}
+
+#YellowRect{
+    width: 190px;
+    color:#FFF200;
+    border: 2px solid #FFF200;
+    margin-top: -45px;
+    font-size: 57pt;
+    background-color: #00B39A;
+}
+
+#TextInBlockAction{
+    margin: 22px 0;
+    color:white;
+    font-size: 43pt;
+}
+
+#YellowText{
+    color:#FFF200;
+}
+
+.procetn{
+    width: 295px;
+    height: 148px;
+	float:left;
+	margin:1px 50px;
+}
+
+.img_proc{
+margin-bottom: -105px;
+}
+
+.cifr{
+    font-size: 50pt;
+    font-weight: bold;
+    color:#FFF200;
+    margin-top: 20px;
+}
+
+/*----------Конец стиля для блока с Акцией-----------------*/
+#otstup2{
+    width: 1200px;
+    height: 1578px;
+    border: 1px solid white;
+}
+#ToReviews{
+    width: 1200px;
+    height:80px;
+    margin-top:1500px;
+}
+/*----------Начало стиля для блока О нас говорят-----------------*/
+#NameRazdel3{
+    margin: 0px auto 30px auto;
+    width: 438px;
+}
+
+#GreenRamka3{
+    color:#00C0A7;
+    font-size: 57pt;
+    font-family: BebasNeueRegular;
+    margin: 0 auto;
+    padding: 5px 10px;
+    width: 360px;
+    border: 3px solid #00C0A7;
+    text-align: center;
+}
+
+#people1{
+    height:150px;
+}
+
+.blockForImg{
+    width:180px;
+    height:150px;
+}
+
+.img_people{
+    float:left;
+    margin-right: 50px;
+}
+
+.Review_Text{
+    padding-top:10px;
+    width:1000px;
+}
+
+.text1{
+    font-weight:bold;
+    font-size: 18pt;
+    font-family: HelveticaNeueCyr-Roman;
+    margin-top:5px;
+    color: #504F4F;
+}
+
+.text2{
+    font-size: 18pt;
+    font-family: HelveticaNeueCyr-Roman;
+    color: #686262;
+}
+/*----------Конец стиля для блока О нас говорят-----------------*/
+
+/*----------Начало стиля для блока Контакты-----------------*/
+#Contacts{
+    height: 500px;
+    width: 100%;
+    background-color: #00B39A;
+    position: absolute;
+    left: 0px;
+    margin-top:20px;
+    font-family: BebasNeueRegular;
+}
+
+#CenterContactBlock{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#Svyaz{
+	width: 500px;
+	border: 2px solid white;
+	font-size: 57pt;
+	color: white;
+	margin: 30px 0;
+}
+
+#Forma{
+	width:677px;
+	height: 300px;
+	float:left;
+	margin-right: 50px;
+}
+
+#Tel{
+	width:220px;
+	height: 150px;
+	float:left;
+}
+
+#CenterInContactBlock{
+    margin: 0 auto;
+    width:950px;
+}
+
+.textinForm{
+    border-bottom: 2px solid white;
+    font-size: 18pt;
+    padding: 5px;
+    color: white;
+}
+
+.textinForm2{
+    font-size: 14pt;
+    font-family: HelveticaNeueCyr-Roman;
+    padding: 10px 0 0 5px;
+    color: white;
+}
+
+.text_pole{
+    margin:10px 0px;
+    font-size: 14pt;
+    color:#A9A9A9;
+    width: 314px;
+    padding: 5px;
+}
+
+.text_pole:active,.text_pole:focus{
+    border:1px solid #00ffd2;
+    outline: none;
+}
+
+.text_message{
+	font-family: HelveticaNeueCyr-Roman;
+    font-size: 14pt;
+    color:#A9A9A9;
+    width: 666px;
+    height: 140px;
+}
+
+textarea {
+  outline: none;
+  padding: 5px;
+}
+
+textarea:focuS{
+    color: #939393;
+}
+
+.text_message:active, .text_message:focus{
+    border: 1px solid #00ffd2;
+}
+
+.Knopka{
+    width: 108px;
+    height: 35px;
+    box-shadow: 0px 4px 0 #FF9400;
+    margin-top: 5px;
+    background-color: #F3FF00;
+    color: #007755;
+    border:none;
+    font-size:12pt;
+    font-weight: bold;
+	cursor:pointer;
+}
+
+.Knopka:hover{
+    width: 108px;
+    height: 35px;
+    box-shadow: none;
+    border:none;
+    margin-top: 10px;
+}
+
+#textShadowinForm1{
+    background-color:#00C0A5;
+    color:white;
+    font-size: 10pt;
+    font-family: Arial;
+}
+/*----------Конец стиля для блока Контакты-----------------*/
+#otstup3{
+    width: 1200px;
+    height: 500px;
+}
+/*----------Начало стиля для Footer-----------------*/
+#Footer{
+    width:100%;
+    position:absolute;
+    left:0;
+    background-color: #007763;
+    height: 40px;
+}
+
+#FooterText{
+	color:#00C7AC;
+    font-size: 16pt;
+    font-family: Arial;
+    margin-top: 10px;
+}
+/*----------Конец стиля для Footer-----------------*/
+
+/*----------Начало стиля для стрелки "Наверх"-----------------*/
+a#move_up:hover {
+    color: #fff;
+    background: #597da3;
+}
+
+
+#toTop {
+    text-align:center;
+    position:fixed;
+    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    right:10px;
+    cursor:pointer;
+    display:none;
+}
+/*----------Конец стиля для стрелки "Наверх"-----------------*/
